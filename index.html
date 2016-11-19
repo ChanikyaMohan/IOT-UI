@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Modern Business - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+    <style type="text/css">
+        .form-horizontal .control-label {
+            padding-top: 7px;
+            margin-bottom: 0;
+            text-align: left;
+        }
+        .progressbar-container {
+          margin: auto;
+          width: 140px;
+          height: auto;
+        }
+        .progressbar-text{
+            top:0!important;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Smart Home</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="services.html">Services</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="portfolio-1-col.html">1 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-2-col.html">2 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-3-col.html">3 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-4-col.html">4 Column Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="portfolio-item.html">Single Portfolio Item</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="blog-home-1.html">Blog Home 1</a>
+                            </li>
+                            <li>
+                                <a href="blog-home-2.html">Blog Home 2</a>
+                            </li>
+                            <li>
+                                <a href="blog-post.html">Blog Post</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Pages <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="full-width.html">Full Width Page</a>
+                            </li>
+                            <li>
+                                <a href="sidebar.html">Sidebar Page</a>
+                            </li>
+                            <li>
+                                <a href="faq.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="404.html">404</a>
+                            </li>
+                            <li>
+                                <a href="pricing.html">Pricing Table</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Header Carousel -->
+    <header id="myCarousel" class="carousel slide  hidden">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide One');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 1</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Two');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 2</h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
+                <div class="carousel-caption">
+                    <h2>Caption 3</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+
+    <!-- Trigger the modal with a button -->
+    <button type="button" id="modal-button" class="btn btn-info btn-sm hidden" data-toggle="modal" data-target="#roomModal">Open Modal</button>
+    <!-- Modal -->
+    <div id="roomModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Room</h4>
+          </div>
+          <div class="modal-body">
+            <p id="modal-p"></p>
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label for="led-toggle" class="col-sm-3 control-label">Led</label>
+                <div class="col-sm-9">
+                  <input type="checkbox" checked data-toggle="toggle" id="led-toggle">  
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="tempbar" class="col-sm-3 control-label">Temperature</label>
+                <div class="col-sm-9">
+                  <!-- input type="text" class="form-control hidden" id="tempbar" placeholder="Temperature" readonly -->
+                  <div class="progressbar-container" id="tempbar"></div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+        <!-- Marketing Icons Section -->
+        <div class="row" id="rooms-section">
+            <div class="col-lg-12">
+                <h1 class="page-header">
+                    Welcome to Smart Home
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        
+
+        <!-- Footer -->
+        <footer class="hidden">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 5000 //changes the speed
+    });
+    </script>
+
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js"></script>
+
+    <script type="text/javascript">
+       // progressbar.js@1.0.0 version is used
+       // Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
+
+       var bar = new ProgressBar.SemiCircle(tempbar, {
+         strokeWidth: 6,
+         color: '#FFEA82',
+         trailColor: '#eee',
+         trailWidth: 1,
+         easing: 'easeInOut',
+         duration: 700,
+         svgStyle: null,
+         text: {
+           value: '',
+           alignToBottom: false
+         },
+         from: {color: '#00BFFF'},
+         to: {color: '#ED6A5A'},
+         // Set default step function for all animate calls
+         step: (state, bar) => {
+           bar.path.setAttribute('stroke', state.color);
+           var value = Math.round(bar.value() * 100);
+           if (value === 0) {
+             bar.setText('');
+           } else {
+             bar.setText(value + "°F");
+           }
+
+           bar.text.style.color = state.color;
+         }
+       });
+       bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+       bar.text.style.fontSize = '2rem';
+
+       //bar.animate(0.5);  // Number from 0.0 to 1.0
+    </script>
+    <script type="text/javascript">
+        var myObject= {
+            "room-id": 1,
+            "name": "kitchen",
+            "led-status": 0,
+            "temp-in-f": 50,
+        };
+        function fillRoomModal(arr) {
+            var count = Object.keys(arr).length;
+            for (var key in arr){
+               var value = arr[key];
+
+               if(key == "led-status"){
+                 if(value == 0 ){//0 - off : 1 - on
+                     $('#led-toggle').bootstrapToggle('off');
+                 } else {
+                     $('#led-toggle').bootstrapToggle('on');
+                 }
+               }
+               if(key == "temp-in-f"){
+                bar.animate(value/100);
+               }
+               //document.write("<br> - " + key + ": " + value);
+                // dont forget to unanimate to 0 before closing
+                // set led status to defualt
+                // clear any other text values if assigned
+             }
+        }
+        //fillRoomModal(myObject);
+
+        $(".panel-heading").click(function() {
+            var contentPanelId = $( event.target ).closest(".room").attr("id");
+            $("#modal-p").text(contentPanelId);
+            $( "#modal-button" ).trigger( "click" );
+            fillRoomModal(myObject);
+        });
+    </script>
+    <script type="text/javascript">
+        //initial JSON string parsing of all room details
+        var details = {
+            "rooms": [{
+                "id": "1",
+                "name": "Master Bed room",
+                "memory available": "400MB",
+                "things in room": ["LED", "TMP SENSOR"]
+            }, {
+                "id": "2",
+                "name": "Kitchen",
+                "memory available": "600MB",
+                "things in room": ["LED", "TMP SENSOR", "HUMIDITY SENSOR"]
+            }, {
+                "id": "3",
+                "name": "Backyard",
+                "memory available": "800MB",
+                "things in room": ["LED", "TMP SENSOR", "HUMIDITY SENSOR"]
+            }]
+        }
+        function fillRoomDetails(arr) {
+            var out = '<ul>';
+            var count = Object.keys(arr).length;
+            for (var i = 0; i < arr['rooms'].length; i++){
+                var obj = arr['rooms'][i];
+                for (var key in obj){
+                   var value = obj[key];
+                   out += '<li>'+ key +' : ' +value +'</li>'
+                 }
+                 out+='</ul>';
+
+                 var element = '<div class="col-md-4 room" id="'+obj['id']+'">\
+                     <div class="panel panel-default">\
+                         <div class="panel-heading">\
+                             <h4><i class="fa fa-home" aria-hidden="true"></i> '+ obj['name']+'</h4>\
+                         </div>\
+                         <div class="panel-body">\
+                         '+out+'\
+                         </div>\
+                     </div>\
+                 </div>';
+                 $( "#rooms-section" ).append( element );
+                 element = "";
+                 out="";
+            }
+        }
+        $( document ).ready(function() {
+            fillRoomDetails(details);
+        });
+    </script>
+</body>
+
+</html>
