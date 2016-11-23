@@ -361,7 +361,7 @@
                 "memory available": "800MB",
                 "things in room": ["LED", "TMP SENSOR", "HUMIDITY SENSOR"]
             }]
-        }
+        };
         function fillRoomDetails(arr) {
             var out = '<ul>';
             var count = Object.keys(arr).length;
@@ -389,7 +389,14 @@
             }
         }
         $( document ).ready(function() {
-            fillRoomDetails(details);
+          $.ajax({
+            type: "GET",
+            url: "http://192.168.0.14:8080/api/devices",
+            crossDomain : true,
+            success: function(result){
+                  fillRoomDetails(result);
+              }
+            });
         });
         function clearRoomModal(){
           $("#accordion").empty();
